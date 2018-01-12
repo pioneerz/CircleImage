@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:background="@android:color/holo_blue_light">
+
+        <com.example.administrator.circleimage.CircleImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            app:civ_border_width="2dp"
+            android:src="@mipmap/hugh"
+            app:civ_border_color="@android:color/black" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:background="@android:color/holo_green_light">
+
+        <com.example.administrator.circleimage.CircleImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/hugh"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@android:color/black" />
+
+    </RelativeLayout>-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.administrator.circleimage.PathCircleView
+                android:id="@+id/image_path_bottom"
+                android:layout_width="@dimen/round_bitmap_width"
+                android:layout_height="@dimen/round_bitmap_height"
+                />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/text_path_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定义控件 path实现底部圆角"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.administrator.circleimage.ClipCircleView
+                android:id="@+id/image_clip_bottom"
+                android:layout_width="@dimen/round_bitmap_width"
+                android:layout_height="@dimen/round_bitmap_height"
+                android:src="@mipmap/demo_icon_android_logo"
+                />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/text_clip_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定义控件 clip实现底部圆角"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_bitmapshaper_all"
+                android:layout_width="@dimen/round_bitmap_width"
+                android:layout_height="@dimen/round_bitmap_height"
+                />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/text_bitmapshaper_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bitmapShaper实现所有圆角"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_bitmapshaper_bottom"
+                android:layout_width="@dimen/round_bitmap_width"
+                android:layout_height="@dimen/round_bitmap_height"
+                />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/text_bitmapshaper_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bitmapShaper实现底部圆角"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_bitmapshader_circle"
+                android:layout_width="@dimen/round_bitmap_width"
+                android:layout_height="@dimen/round_bitmap_height"
+                />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/text_bitmapshader_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BitmapShader实现圆形图"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_xfermode_all"
+                android:layout_width="@dimen/round_bitmap_width"
+                android:layout_height="@dimen/round_bitmap_height"
+                />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/text_xfermode_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XFermode实现所有圆角"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_xfermode_bottom"
+                android:layout_width="@dimen/round_bitmap_width"
+                android:layout_height="@dimen/round_bitmap_height"
+                />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/text_xfermode_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XFermode实现底部圆角"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_xfermode_circle"
+                android:layout_width="@dimen/round_bitmap_width"
+                android:layout_height="@dimen/round_bitmap_height"
+                />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/text_xfermode_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XFermode实现圆形图"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
